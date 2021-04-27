@@ -1,0 +1,93 @@
+* {
+    font-family: 'Roboto', sans-serif;
+    left: 0;
+    top: 0;
+}
+
+a, h1, h2, h3, h4, h5, li {
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    height : 120px;
+    transition: 1s;
+}
+
+.collapse .navbar-nav a:hover {
+    color: red;
+}
+
+.navbar-nav .nav-link,
+nav div .navbar-brand,
+nav .klik .fs-2 {
+    color: white;
+}
+
+nav.sticky .klik .fs-2,
+nav.sticky .collapse .navbar-nav .nav-link,
+nav.sticky .navbar-brand{
+    color: black;
+}
+
+
+nav.sticky .collapse .navbar-nav .nav-link:hover{
+    color: red;
+}
+
+nav.sticky {
+    height: 60px;
+    background: white;
+}
+
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        position: absolute;
+        width: 100%;
+        left: -100%;
+    }
+    
+    .collapse img {
+        height: 100vh;
+        width: 100%;
+        z-index: -5;
+    }
+
+    .collapse .nav-link{
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .collapse .navbar-nav {
+        padding-top: 200px;
+        height: 100vh;
+        width: 100%;
+        position: absolute;
+    }
+
+    .collapse .cit {
+        padding-top: 200px;
+        background: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
+        height: 100vh;
+        width: 100%;
+        opacity: 80%;
+        position: absolute;
+    }
+
+    .collapse .navbar-nav a {
+        color: black;
+    }
+
+    .collapse .navbar-nav a:hover {
+        color: white;
+        background-color: rgb(45, 45, 241);
+    }
+
+    .navbar-nav i {
+        position: absolute;
+        top : 5px;
+        right: 5px;
+        text-align: right;
+        cursor: pointer;
+        color: black;
+    }
+}
